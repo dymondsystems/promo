@@ -433,21 +433,101 @@ color: white;
         <!-- Modal body -->
         <div class="modal-body">
         	<div class="container">
+            
+       
+            
+            
+            
+            
+            
+            xxxxxxxxxxxxxxxxxxxxxxx
+            <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+            
+            
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   
   <form>
     <div class="form-group">
       <label for="comment">Keep notes here</label>
       
-      <textarea style="width:100%" rows="15" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done"> 
+      <textarea style="width:100%" rows="15" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
 </textarea>
       
-      <button type="button" onclick="myFunction()">Copy</button>
       
-      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+      
+      <button type="button" class='btn btn-primary pushme2 with-color2' onclick="myFunction()">Copy</button>
     </div>
   </form>
 </div>
  
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ <button class='btn btn-warning pushme3 with-color'>Add</button>
+ 
+ <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  <button class='btn btn-success pushme3 with-color' data-toggle="collapse" data-target="#demo">Add another</button>
+  <div id="demo" class="collapse">
+  
+ <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  
+  
+  
+  
+  
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Add another</button>
+  <div id="demo1" class="collapse">
+    <form>
+    <div class="form-group">
+      <label for="comment">Max URL's</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+ 
+ 
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         </div>
         
         <!-- Modal footer -->
@@ -1350,6 +1430,9 @@ for (i = 0; i < frm_elements.length; i++)
 }
 
 </script>
+
+
+
 <script>
 $(document).ready(function(){
 
@@ -1360,27 +1443,59 @@ $(document).ready(function(){
     $(".pushme-with-color").click(function () {
        $(this).text("DON'T PUSH ME");
        $(this).addClass("btn-success");
-       $(this).removeClass("btn-warning");
+       $(this).removeClass("btn-danger");
     });
     
     $(".with-color").click(function () {    
-       if($(this).hasClass("btn-warning"))
+       if($(this).hasClass("btn-danger"))
        {
        		$(this).addClass("btn-success");
-       		$(this).removeClass("btn-warning");
+       		$(this).removeClass("btn-danger");
        }
        else{
-       		$(this).addClass("btn-warning");
+       		$(this).addClass("btn-danger");
        		$(this).removeClass("btn-success");
        }
     });
 
     $(".pushme2").click(function(){
 		$(this).text(function(i, v){
-		   return v === 'Copied' ? 'Copy' : 'Copied!'
+		   return v === 'Copied!' ? 'Copy' : 'Copied!'
+		});
+   
+       
+    });
+    
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+ $(".with-color2").click(function () {    
+       if($(this).hasClass("btn-success"))
+       {
+       		$(this).addClass("btn-primary");
+       		$(this).removeClass("btn-success");
+       }
+       else{
+       		$(this).addClass("btn-success");
+       		$(this).removeClass("btn-primary");
+       }
+    });
+
+
+    $(".pushme3").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'REMOVE' ? 'ADD' : 'REMOVE'
 		});
     });
 });
 </script>
+
+
+
+
+
 
 
