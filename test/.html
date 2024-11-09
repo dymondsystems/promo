@@ -1,0 +1,1949 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" 
+      type="image/png" 
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Leaf_font_awesome.svg/1024px-Leaf_font_awesome.svg.png">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+ 
+ <meta property="og:title" content="Learning center" />
+<meta property="og:type" content="company" />
+<meta property="og:site_name" content="learning center " />
+<meta property="og:description" content=" Learning center 
+" />
+
+
+<meta property="og:url" content="Learning center" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Leaf_font_awesome.svg/1024px-Leaf_font_awesome.svg.png" />
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+">
+ 
+<style>
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+    
+}
+
+.progress{margin: 100px;}
+
+
+#calculator {
+  width: 450px;
+  height: 270px;;
+  margin: 50px auto 0 auto;
+  background-color: #191970;
+  padding: 10px 10px 260px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid #42729B;
+}
+
+.result {
+  width: 305px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  background-color: #fff;
+  color: #000;
+  margin: 5px;
+}
+
+.result > p {
+  margin-left: 10px;
+}
+.clear, span1 {
+  height: 40px;
+  border-bottom: 3px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin: 5px;
+}
+
+.clear {
+  width: 95px;
+  float: left;
+  background-color: #c0392b;
+  color: #fff;
+    border-color: #A63125;
+}
+
+
+span1 {
+  float: left;
+  width: 95px;
+}
+span1:hover{
+    
+	background-color:#00BFFF;
+}
+
+
+
+
+
+
+
+span.b {
+  display: inline-block;
+  
+  padding: 5px;
+  }
+ 
+
+html body {
+    background-color: rgba(0,0,0,1.00);
+
+}
+
+nav{
+color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+   
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+}
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fda56b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#splash {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+.curtain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    animation: curtainAnimation 4s ease-out forwards, gradientAnimation 3s ease-out forwards;
+}
+
+
+.splash-content {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.splash-content i {
+    font-size: 2em;
+}
+
+.additional-splash-effects {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff6b6b, #8e44ad, #3498db, #e74c3c);
+    animation: backgroundAnimation 20s infinite alternate;
+    z-index: 1;
+}
+
+#content {
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+
+.animated-emoji {
+    font-size: 2em;
+    margin-top: 10px;
+    animation: bounce 1s infinite;
+}
+
+.animated-title {
+    animation: fadeInDown 1.5s ease-out;
+}
+
+.animated-subtitle {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes curtainAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes cardAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+#sidebar {
+    overflow: hidden;
+    z-index: 3;
+}
+#sidebar .list-group {
+    min-width: 400px;
+    background-color: #333;
+    min-height: 100vh;
+}
+#sidebar i {
+    margin-right: 6px;
+}
+
+#sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
+}
+
+/* highlight active menu */
+#sidebar .list-group-item:not(.collapsed) {
+    background-color: #222;
+}
+
+/* closed state */
+#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+/* open state */
+#sidebar .list-group .list-group-item[aria-expanded="true"] {
+  background-color: #222;
+}
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item  {
+  padding-left: 20px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item,
+#sidebar .list-group .collapse > .collapsing .list-group-item {
+  padding-left: 30px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+  padding-left: 40px;
+}
+
+@media (max-width:768px) {
+    #sidebar {
+        min-width: 35px;
+        max-width: 40px;
+        overflow-y: auto;
+        overflow-x: visible;
+        transition: all 0.25s ease;
+        transform: translateX(-45px);
+        position: fixed;
+    }
+    
+    #sidebar.show {
+        transform: translateX(0);
+    }
+
+    #sidebar::-webkit-scrollbar{ width: 0px; }
+    
+    #sidebar, #sidebar .list-group {
+        min-width: 1px;
+        overflow: visible;
+    }
+    /* overlay sub levels on small screens */
+    #sidebar .list-group .collapse.show, #sidebar .list-group .collapsing {
+        position: relative;
+        z-index: 1;
+        width: 190px;
+        top: 0;
+        }
+    
+    #sidebar .list-group > .list-group-item {
+        text-align: center;
+        padding: .75rem .5rem;
+    }
+    /* hide caret icons of top level when collapsed */
+    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
+    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
+        display:none;
+    }
+}
+
+.collapse.show {
+  visibility: visible;
+}
+.collapsing {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+
+
+
+
+
+</style>
+   <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <div id="splash" class="animated-splash">
+        <div class="curtain">
+            <div class="splash-content">
+                <i class="fa fa-spin fa-spinner"></i>
+                <h1 class="animated-title">Retrieving dashboard</h1>
+                <h3 class="animated-subtitle">Hold on for something great!</h3>
+                <div class="animated-emoji" id="loadingEmoji">
+                    &#x1F60D;
+                </div>
+            </div>
+     </div></div>
+   
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav>
+
+<center><h5><i class="fa fa-diamond"></i>Dymond marketing center</h5></center>
+
+</nav>
+
+<div class="jumbotron">
+
+<div class="button sticky-top">
+ <!-- search open button -->
+  <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-code"></i>
+    Development
+  </button> 
+  
+  
+  <!-- search console open button -->
+  <button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#myModal"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </button> 
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-play"></i>
+    video editing
+  </button>
+  
+  
+  
+   <!-- spinner open button -->
+  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#checklist"><i class="fa fa-line-chart"></i>
+   Analytics
+  </button>
+ 
+  
+  
+    <!-- check list open button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#checklist"><i class="fa fa-chain"></i>
+   SEO
+  </button>
+  
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-sticky-note-o"></i>
+    Note pad
+  </button>
+  
+  
+   <!-- chat open button -->
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#chat"><i class="fa fa-commenting-o"></i>
+   Chat
+  </button> 
+  
+ <!-- More tools open button -->
+  <button type="button" style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#more"><i class="fa fa-plus"></i>
+   Tools
+  </button>
+</div>
+
+<h3>Sites</h3>
+<br>
+
+<p><a href="ms-photos:" target="_blank">Send an email!</a></p>
+
+        
+      <div class="row w-100">
+      
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+                <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-map-marker" style="width:14px;" aria-hidden="true"></span></div>
+                <div class="text-success text-center mt-3"><h4>Local listings</h4></div>
+                <div class="text-success text-center mt-2"><p>Business listing sites for companies</p>
+              <br>
+             <!-- Local listings -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#locallistings">
+    Open
+  </button>
+           
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+            <br>
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
+                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+                  <br>
+            <br>
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
+    Open
+  </button>
+               </div> 
+                
+                </div>
+            </div> 
+        </div>
+        
+      
+       
+       
+       
+       
+        
+     
+     
+ 
+     <br>
+   
+     <div id="test">
+     <h3>Tools</h3>
+     <br>
+     
+    
+<div class="row w-100">
+        <div class="col-md-3">
+            <div class="card border-info mx-sm-1 p-3">
+                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-globe" aria-hidden="true"></span></div>
+                <div class="text-info text-center mt-3"><h4>Web</h4></div>
+                <div class="text-info text-center mt-2"><p>Websites that can be used for business, landing pages, blog, and more</p>
+    
+
+ <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ignitia">
+    Open 
+  </button>
+
+
+
+
+       
+                </div>
+            </div>
+        </div>
+         
+     
+     
+    <div class="col-md-3">
+            <div class="card border-info mx-sm-1 p-3">
+                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-globe" aria-hidden="true"></span></div>
+                <div class="text-info text-center mt-3"><h4>Web</h4></div>
+                <div class="text-info text-center mt-2"><p>Websites that can be used for business, landing pages, blog, and more</p>
+    
+
+ <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ignitia">
+    Open 
+  </button>
+
+
+
+
+       
+                </div>
+            </div>
+        </div> 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+  <!-- search open button -->
+  <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-code"></i>
+    Development
+  </button>  
+  
+  <!-- search console open button -->
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </button> 
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-play"></i>
+    video editing
+  </button>
+  
+  
+  
+   <!-- spinner open button -->
+  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#checklist"><i class="fa fa-line-chart"></i>
+   Analytics
+  </button>
+ 
+  
+  
+    <!-- check list open button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#checklist"><i class="fa fa-chain"></i>
+   SEO
+  </button>
+  
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-sticky-note-o"></i>
+    Note pad
+  </button>
+  
+  
+   <!-- chat open button -->
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#chat"><i class="fa fa-commenting-o"></i>
+   Chat
+  </button> 
+  
+ <!-- More tools open button -->
+  <button type="button" style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#more"><i class="fa fa-plus"></i>
+   Tools
+  </button> 
+  
+  <br>
+  <br>
+  
+  <h3>Spam tools</h3>
+  <br>
+  <span class="b">
+  <h3>Spam tools</h3>
+  
+  
+  
+  <div class="row w-100">
+        <div class="col-md-3">
+            <div class="card border-info mx-sm-1 p-3">
+                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-globe" aria-hidden="true"></span></div>
+                <div class="text-info text-center mt-3"><h4>Web</h4></div>
+                <div class="text-info text-center mt-2"><p>Websites that can be used for business, landing pages, blog, and more</p>
+    
+
+ <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ignitia">
+    Open 
+  </button>
+
+
+
+
+       
+                </div>
+            </div>
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="container">
+  <img src="https://www.htmlgames.com/uploaded/thumb/monkeyisland300200.jpg">
+  
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#game1">Play</button>
+</div></span>
+<span class="b">
+  
+  <div class="container">
+  <img src="https://www.htmlgames.com/uploaded/thumb/hiddenspotscastles300200.jpg">
+  
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#game2">Play</button>
+</div></span>
+
+
+
+<span class="b">
+  
+  <div class="container">
+  <img src="https://www.htmlgames.com/uploaded/thumb/tapman300.jpg">
+  
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#game3">Play</button>
+</div></span>
+  
+
+
+
+
+<span class="b">
+  
+  <div class="container">
+  <img src="https://www.htmlgames.com/uploaded/thumb/swipeacar300200.jpg">
+  
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#game4">Play</button>
+</div></span>
+  </div>
+
+  <!-- search Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Article search</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	  
+					Search
+ 
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  <!-- The Modal note pad -->
+  <div class="modal" id="notepad">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Note pad</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	<div class="container">
+            
+       
+            
+            
+            
+            
+            
+            xxxxxxxxxxxxxxxxxxxxxxx
+            <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+            
+            
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  
+  <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="15" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-primary pushme2 with-color2' onclick="myFunction()">Copy</button>
+      
+      <input type="button" class='btn btn-danger' name="reset_form" value="Reset / clear" onclick="this.form.reset();" style="background-color:red; color:white;">
+    </div>
+  </form>
+</div>
+
+        
+        
+        
+        ddddddddddddddddddddddddddddddddddddddddddd
+        
+  <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  <button type="button" class="btn btn-success pushme3 with-color" data-toggle="collapse" data-target="#demo">Add another</button>
+  <div id="demo" class="collapse">
+  
+ <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  
+  
+  
+  
+  
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Add another</button>
+  <div id="demo1" class="collapse">
+    <form>
+    <div class="form-group">
+      <label for="comment">Max URL's</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+        
+        
+        dddddddddddddddddddddddddddddddddddddddddddd
+        </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+ <!-- local listing sites modal -->
+  <div class="modal" id="locallistings">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Local listing sites</h4>
+      
+          
+        </div>
+        
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+   
+
+   
+   
+   <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Tumblr
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                tumblr is a micro blogging platform<br><br>
+                                
+                         <button onclick="tumblr()">Try it</button>
+
+<script>
+function tumblr() {
+  window.open("https://www.w3schools.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=50,left=150,width=1000,height=600");
+}
+</script>       
+                                
+                                
+                                
+                                
+                                <button onclick="tumblr()" class="btn btn-info" role="button">Open</button>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+ 
+ 
+   <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Wordpress
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Wordpress is a blogging platform<br><br>
+                                <a href="#" class="btn btn-info" role="button">Open</a>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+ <center>More sites coming soon</center>
+ 
+ 
+       
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+ <!-- Video modal -->
+  <div class="modal" id="video">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Video</h4>
+          
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+       <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/120px-Google_%22G%22_Logo.svg.png" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Google
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Google my bisiness <br>Create a company profile<br><br>
+                                <a href="#" class="btn btn-info" role="button">Open</a>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+         <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://westwind.org/wp-content/uploads/2018/11/facebook-logo-png.png" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Facebook
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Facebook <br>Create a company page profile<br><br>
+                                <a href="#" class="btn btn-info" role="button">open</a>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   
+   
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+         <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://static.ivanti.com/sites/marketing/media/images/logos/customers-color/homeadvisor.png" alt="HTML tutorial" style="width:100px;height:70px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Homeadvisor
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Homeadvisor <br>Create a company profile<br><br>
+                                <a href="#" class="btn btn-info" role="button">open</a>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   
+   
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+
+ 
+        <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://media.angi.com/s3fs-public/Angi-logo-Orange.svg" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Angi
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Angi formerly angieslist. <br>Create a company profile<br><br>
+                                <a href="#" class="btn btn-info" role="button">open</a>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+  
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ </div>
+   
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+ <!-- Business sites modal -->
+  <div class="modal" id="business">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Business sites</h4>
+          
+        
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header">
+                                Tumblr
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                tumblrgggggggggggggggggggggggggggg<br><br>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+ 
+ 
+   <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header">
+                                Tumblr
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                tumblrgggggggggggggggggggggggggggg<br><br>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  <!-- The Modal business sites -->
+  <div class="modal" id="bible">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Bible lesson: type the verse</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	
+       <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header">
+                                Tumblr
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                tumblrgggggggggggggggggggggggggggg<br><br>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+ 
+ 
+   <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header">
+                                Tumblr
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                tumblrgggggggggggggggggggggggggggg<br><br>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                <a href="#" class="btn btn-info" role="button">Link Button</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- The Modal game1 -->
+  <div class="modal" id="game1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Monkey island</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+             <center><div>
+<script src="https://cdn.htmlgames.com/embed.js?game=MonkeyIsland&amp;bgcolor=white"></script>
+</div></center>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- The Modal checklist -->
+  <div class="modal" id="checklist">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Checklist</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <div class="container">
+  <h2>List of task</h2>
+  <p>Check off your task as you complete them:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Find, spin, and post articles
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Typing practice
+      </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" id="check3">Coding practice
+      </label>
+      </div>
+      <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" id="check4">Bible verses
+      </label>
+    
+        </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+<!-- The Modal chat -->
+  <div class="modal" id="chat">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style= "background-color:#242424;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">Help</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body ">
+        
+  <iframe src="https://dymond.systems/bot2"  width="100%;" height="750px;" frameBorder="0;">
+        </iframe>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer bg-dark">
+        
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <br>
+          
+          
+        </div>
+        <div class="bg-dark">
+        <p>If you need more help try <a href="#">ChatGPT</a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- The Modal more -->
+  <div class="modal" id="more">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">More tools</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <div class="container">
+  more
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-sticky-note-o"></i>
+    Note pad
+  </button>
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#game1"><i class="fa fa-sticky-note-o"></i>
+    Note pad2
+  </button>
+  
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- The Modal game1 -->
+  <div class="modal" id="game1">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Monkey island</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+             <center><div>
+<script src="https://cdn.htmlgames.com/embed.js?game=MonkeyIsland&amp;bgcolor=white"></script>
+</div></center>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- The Modal game2 -->
+  <div class="modal" id="game2">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Hidden spots</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+             <center><div>
+<script src="https://cdn.htmlgames.com/embed.js?game=HiddenSpotsCastles&amp;bgcolor=white"></script>
+</div></center>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- The Modal game3 -->
+  <div class="modal" id="game3">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Tap man</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+             <center><div>
+<script src="https://cdn.htmlgames.com/embed.js?game=Tapman&amp;bgcolor=white"></script>
+</div></center>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- The Modal game4 -->
+  <div class="modal" id="game4">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Swipe a car</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+             <center><div>
+<script src="https://cdn.htmlgames.com/embed.js?game=SwipeACar&amp;bgcolor=white"></script>
+</div></center>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+<!-- footer start -->
+    <footer class="bg-dark text-light py-5 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <h3 class="mb-0"><i class="fas fa-dollar-sign"></i>earn</h3>
+                            <small class="d-block text-muted">© 2018-2019</small>
+                            <small class="text-muted">All Rights Reserved.</small>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-9">
+                            
+                            <div class="row no-gutters">
+                                <div class="col-6 col-lg-3">
+                                     <h5>Features</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Ready to ship</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Light weight</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted"> Responsive</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Inner Pages</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h5>Resources</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Angular</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Java</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Camunda API</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Postman</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                             
+                                <div class="col-6 col-lg-3">
+                                     <h5>Help</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Forum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Site map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h5>About</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Privact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Terms</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Investment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+<script>
+					window.onload = function () {
+						  var buttons = document.getElementsByTagName('span1'),
+							  result = document.querySelectorAll('.result p')[0],
+							  clear = document.getElementsByClassName('clear')[0];
+						  
+						  for (var i = 0; i < buttons.length; i++) {
+							if (buttons[i].innerHTML === '=') {
+							  buttons[i].addEventListener("click", calculate(i));
+							} else {
+							  buttons[i].addEventListener("click", addValue(i));
+							}
+						  }
+						  
+						  clear.onclick = function () {
+							result.innerHTML = '';
+						  };  
+						  
+						  function addValue(i) {
+							return function () {
+							    
+								result.innerHTML += buttons[i].innerHTML;
+									
+							};
+						  }
+						  
+						  function calculate(i) {
+
+							return function () {
+									var final_res = result.innerHTML;
+                                     
+																	  
+							  result.innerHTML = eval(final_res);
+							};
+						  }
+						};
+	
+</script>
+
+<script>
+  $("#notepad, #game1").on('show.bs.modal', function (e) {
+    $("#more").modal("hide");
+});
+  
+  </script>
+
+<script>
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("output1");
+  
+function myFunction2() {
+  document.getElementByName("t3").reset();
+}
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+  
+  
+}
+
+for (i = 0; i < frm_elements.length; i++)
+{
+    field_type = frm_elements[i].type.toLowerCase();
+    switch (field_type)
+    {
+    case "text":
+    case "password":
+    case "textarea":
+    case "hidden":
+        frm_elements[i].value = "";
+        break;
+    case "radio":
+    case "checkbox":
+        if (frm_elements[i].checked)
+        {
+            frm_elements[i].checked = false;
+        }
+        break;
+    case "select-one":
+    case "select-multi":
+        frm_elements[i].selectedIndex = -1;
+        break;
+    default:
+        break;
+    }
+}
+
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+
+    $(".pushme").click(function () {
+       $(this).text("DON'T PUSH ME");
+    });
+    
+    $(".pushme-with-color").click(function () {
+       $(this).text("DON'T PUSH ME");
+       $(this).addClass("btn-success");
+       $(this).removeClass("btn-danger");
+    });
+    
+    $(".with-color").click(function () {    
+       if($(this).hasClass("btn-danger"))
+       {
+       		$(this).addClass("btn-success");
+       		$(this).removeClass("btn-danger");
+       }
+       else{
+       		$(this).addClass("btn-danger");
+       		$(this).removeClass("btn-success");
+       }
+    });
+
+    $(".pushme2").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'Copied!' ? 'Copy' : 'Copied!'
+		});
+   
+       
+    });
+    
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+ $(".with-color2").click(function () {    
+       if($(this).hasClass("btn-success"))
+       {
+       		$(this).addClass("btn-primary");
+       		$(this).removeClass("btn-success");
+       }
+       else{
+       		$(this).addClass("btn-success");
+       		$(this).removeClass("btn-primary");
+       }
+    });
+
+
+    $(".pushme3").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'REMOVE' ? 'ADD' : 'REMOVE'
+		});
+    });
+});
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded",
+ function () {
+    setTimeout(function () {
+        document.getElementById("preloader")
+        .style.display = "none";
+        setTimeout(function () 
+        {
+            document.getElementById("splash")
+            .style.display = "none";
+            document.getElementById("content")
+            .style.display = "block";
+            addLiveAnimations();
+        }, 3000);
+    }, 1000);
+});
+
+
+</script>
+
+
+
